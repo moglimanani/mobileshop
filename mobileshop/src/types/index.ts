@@ -30,3 +30,7 @@ export interface ProductsProps{
 export interface FilterProps {
     brand: string[]
 }
+
+export interface CartProps extends ProductsProps {
+    quantity?: number
+}

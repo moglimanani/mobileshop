@@ -7,7 +7,6 @@ const HomePage = () => {
   const {theme} = useContext(ThemeContext)
   const {products} = useContext(ProductContext)
   const {pathname} = useLocation()
-  console.log(products);
   
     return (
         <h1>
