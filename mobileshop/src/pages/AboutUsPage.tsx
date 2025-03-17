@@ -2,7 +2,7 @@ import { memo } from "react"
 
 const AboutUsPage = () => {
     return (
-        <>Home</>
+        <>About us</>
     )
 }
 

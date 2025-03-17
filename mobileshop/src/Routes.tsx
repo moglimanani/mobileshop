@@ -1,10 +1,14 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { Route, Routes } from "react-router";
 import routeConfig from "./routesconfig";
 
-const router = createBrowserRouter(routeConfig)
-
-const Routes = () => {
-    return <RouterProvider router={router} />
+const RoutesComponent = () => {
+    return (
+        <Routes>
+            {routeConfig.map((navItem, id) =>
+                <Route path={navItem.path} element={navItem.element} key={`route-${id}`} />
+            )}
+        </Routes>
+    )
 }
 
-export default Routes
+export default RoutesComponent

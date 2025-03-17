@@ -1,0 +1,13 @@
+.productsWrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+
+    .productsCard{
+        flex: 1 1 100%;
+        @media (min-width: 720px) {
+            flex: 1 1 calc(33.33% - 32px);   
+        }
+    }
+}

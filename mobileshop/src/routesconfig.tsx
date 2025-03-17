@@ -7,12 +7,12 @@ import ProductsPage from "./pages/ProductsPage";
 
  
 const routeConfig = [
-    {path: '/', element: <HomePage />},
-    {path: '/about', element: <AboutUsPage />},
-    {path: '/contact', element: <ContactPage />},
-    {path: '/cart', element: <CartPage />},
-    {path: '/products', element: <ProductsPage />},
-    {path: '/category', element: <CategoryPage />},
+    {path: '/', element: <HomePage />, name: 'Home'},
+    {path: '/about', element: <AboutUsPage />, name: 'About Us'},
+    {path: '/contact', element: <ContactPage />, name: 'Contact'},
+    {path: '/products', element: <ProductsPage />, name: 'Products'},
+    // {path: '/products/:brand', element: <ProductsPage />, name: 'Category'},
+    {path: '/cart', element: <CartPage />, name: 'Cart'}
 ]
 
 export default routeConfig

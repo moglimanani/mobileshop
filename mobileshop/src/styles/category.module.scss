@@ -1,0 +1,16 @@
+.categoryWrapper{
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    button {
+       border-bottom:  1px solid grey;
+       text-decoration: none;
+       background-color: #222;
+       color: #fff;
+       font-size: 1.2em;
+       &.filteredButton{
+        background-color: #9e44b6;
+        color: #fff;
+       }
+    }
+}

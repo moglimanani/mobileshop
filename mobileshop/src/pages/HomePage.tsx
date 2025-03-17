@@ -1,11 +1,18 @@
-import { memo } from "react"
-import { Button } from "react-bootstrap"
+import { memo, useContext } from "react"
+import ThemeContext from "../contexts/themeContext"
+import { useLocation } from "react-router-dom"
+import ProductContext from "../contexts/productContext"
 
 const HomePage = () => {
+  const {theme} = useContext(ThemeContext)
+  const {products} = useContext(ProductContext)
+  const {pathname} = useLocation()
+  console.log(products);
+  
     return (
-        <>Home  <Button as="a" variant="primary">
-        Button as link
-      </Button></>
+        <h1>
+          Welcome to the mobile shop
+        </h1>
     )
 }
 

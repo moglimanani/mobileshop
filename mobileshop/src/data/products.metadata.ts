@@ -1,4 +1,4 @@
-[
+const data = [
     {
       "ID": 1,
       "Name": "Galaxy S22",
@@ -12,8 +12,8 @@
       "Images": ["image_url_1"],
       "Attributes": {
         "Display": "6.1-inch",
-        "Refresh Rate": "120Hz",
-        "5G": true,
+        "Refresh_Rate": "120Hz",
+        "Network_5G": true,
         "Storage": "128GB"
       },
       "Rating": 4.5,
@@ -41,8 +41,8 @@
       "Images": ["image_url_2"],
       "Attributes": {
         "Display": "6.1-inch",
-        "Refresh Rate": "120Hz",
-        "5G": true,
+        "Refresh_Rate": "120Hz",
+        "Network_5G": true,
         "Storage": "128GB"
       },
       "Rating": 4.7,
@@ -98,7 +98,7 @@
       "Images": ["image_url_4"],
       "Attributes": {
         "Display": "6.3-inch",
-        "Refresh Rate": "90Hz",
+        "Refresh_Rate": "90Hz",
         "Chipset": "Google Tensor",
         "Storage": "128GB"
       },
@@ -183,7 +183,7 @@
       "Images": ["image_url_7"],
       "Attributes": {
         "Display": "6.5-inch",
-        "Refresh Rate": "120Hz",
+        "Refresh_Rate": "120Hz",
         "Storage": "128GB"
       },
       "Rating": 4.2,
@@ -1237,3 +1237,4 @@
       }
   ]
   
+  export default data
